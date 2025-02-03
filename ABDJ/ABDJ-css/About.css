@@ -220,3 +220,101 @@
     background: linear-gradient(top, #a9fff4 0%,#cfbbff 100%);
     z-index: -1;
   }
+
+.circle { 
+    margin-left: 150px;
+    width: 300px;
+    height: 300px;
+    border: 1px solid #333;
+    border-radius: 50%;
+    position: fixed;
+  }
+  
+  .content {
+    width: 50%; 
+    height: 50%;
+    position: absolute;
+    left: 25%;
+    top: 25%;
+    border: 1px solid #333;
+  }
+  
+  /* top */
+  .top { 
+    animation: rotate_top 60s linear infinite;
+  }
+  @keyframes rotate_top { 
+    0% { 
+     transform: rotate(0deg) translateY(-100%) rotate(0deg);
+    }
+    100% {  
+      transform: rotate(360deg) translateY(-100%) rotate(-360deg);
+    }
+  }
+  
+  /* right */
+  .right { 
+    animation: rotate_right 60s linear infinite;
+  }
+  @keyframes rotate_right { 
+    0% { 
+     transform: rotate(0deg) translateX(100%) rotate(0deg);
+    }
+    100% {  
+      transform: rotate(360deg) translateX(100%) rotate(-360deg);
+    }
+  }
+  
+  /* bottom */
+  .bottom { 
+    animation: rotate_bottom 60s linear infinite;
+  }
+  @keyframes rotate_bottom { 
+    0% { 
+     transform: rotate(0deg) translateY(100%) rotate(0deg);
+    }
+    100% {  
+      transform: rotate(360deg) translateY(100%) rotate(-360deg);
+    }
+  }
+  
+  /* left */
+  .left { 
+    animation: rotate_left 60s linear infinite;
+  }
+  @keyframes rotate_left { 
+    0% { 
+     transform: rotate(0deg) translateX(-100%) rotate(0deg);
+    }
+    100% {  
+      transform: rotate(360deg) translateX(-100%) rotate(-360deg);
+    }
+  }
+
+  .object2{
+    margin-left:800px;
+    margin-top: 250px;
+    position: fixed;
+  }
+  
+  /* 点滅 */
+.blinking{
+	-webkit-animation:blink 0.35s ease-in-out infinite alternate;
+    -moz-animation:blink 0.35s ease-in-out infinite alternate;
+    animation:blink 0.35s ease-in-out infinite alternate;
+}
+@-webkit-keyframes blink{
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+@-moz-keyframes blink{
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+@keyframes blink{
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+
+  
